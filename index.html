@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Dining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TASTE<span>FUSION</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to <span>TasteFusion</span></h1>
+            <p>Experience the Art of Fine Dining</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our <span>Menu</span></h2>
+        <div class="menu-container">
+            <div class="menu-category">
+                <h3>Starters</h3>
+                <div class="menu-item">
+                    <h4>Caprese Salad</h4>
+                    <p>Fresh mozzarella, tomatoes, basil</p>
+                    <span class="price">$12</span>
+                </div>
+                <div class="menu-item">
+                    <h4>French Onion Soup</h4>
+                    <p>Classic soup with gruyere cheese</p>
+                    <span class="price">$10</span>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Main Course</h3>
+                <div class="menu-item">
+                    <h4>Grilled Salmon</h4>
+                    <p>With asparagus and lemon butter</p>
+                    <span class="price">$28</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Beef Tenderloin</h4>
+                    <p>With truffle mashed potatoes</p>
+                    <span class="price">$34</span>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Desserts</h3>
+                <div class="menu-item">
+                    <h4>Crème Brûlée</h4>
+                    <p>Classic French vanilla custard</p>
+                    <span class="price">$9</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Chocolate Soufflé</h4>
+                    <p>With vanilla ice cream</p>
+                    <span class="price">$11</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Our <span>Gallery</span></h2>
+        <div class="gallery-grid">
+            <img src="1.jpg" alt="Restaurant Interior" onclick="openLightbox(this.src)">
+            <img src="2.jpg" alt="Signature Dish" onclick="openLightbox(this.src)">
+            <img src="3.jpg" alt="Dining Area" onclick="openLightbox(this.src)">
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+
+    <section id="about">
+        <h2>About <span>Us</span></h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Chef">
+            <div class="about-text">
+                <p>At TasteFusion, we blend traditional flavors with modern culinary techniques to create an unforgettable dining experience.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4.9</h3>
+                        <p>Star Rating</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Signature Dishes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation">
+        <h2>Make a <span>Reservation</span></h2>
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+                <input type="date" required>
+                <input type="time" required>
+            </div>
+            <div class="form-row">
+                <input type="number" placeholder="Number of Guests" min="1" max="10" required>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <textarea placeholder="Special Requests" rows="4"></textarea>
+            <button type="submit">Book Table</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon-Thu: 11am-10pm</p>
+                <p>Fri-Sat: 11am-11pm</p>
+                <p>Sunday: 11am-9pm</p>
+            </div>
+            <div class="footer-section">
+               
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 TasteFusion Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
